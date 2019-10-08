@@ -1,0 +1,19 @@
+@mixin controls {
+  width: 100%;
+  padding: 1.25em;
+  margin-top: 1em;
+  border-radius: 1em;
+  border: 0.2em solid;
+  box-shadow: 2px 10px 24px 5px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transition: 0.5s;
+    transform: translateY(-0.5em);
+  }
+}
+
+@mixin controlTitle {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1em;
+}

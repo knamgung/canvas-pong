@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <p id="p1"></p>
+    <div class="body">
+      <div>
+        <h1 class="splash__title head">pong.js</h1>
+      </div>
+      <div class="splash">
+        <div class="splash__main">
+          <h1 class="splash__exit">X</h1>
+          <h1 class="splash__title">pong.js</h1>
+          <div class="splash__content">
+            <div class="splash__instruct">
+              <p class="splash__instruct--info">
+                The rule is simple<br />hit the ball with the paddle and see how
+                much points you can rack up!<br />
+                every points speeds up the ball and shrinks the paddle little by
+                little
+              </p>
+            </div>
+            <div class="splash__controls">
+              <h3 class="splash__controls--title">controls</h3>
+              <div class="splash__controls--group">
+                <div class="splash__computer">
+                  <h5 class="splash__computer--title">Computer</h5>
+                  <div class="splash__computer--group">
+                    <div class="splash__keyboard">
+                      <p class="splash__method">keyboard</p>
+                      <p class="splash__info">
+                        Move the paddle left or right using the arrow keys
+                      </p>
+                    </div>
+
+                    <div class="splash__mouse">
+                      <p class="splash__method">mouse</p>
+                      <p class="splash__info">
+                        Move the paddle left or right by clicking on the
+                        left/right half of the screen
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="splash__mobile">
+                  <h5 class="splash__mobile--title">Mobile</h5>
+                  <div class="splash__mobile--group">
+                    <div class="splash__touch">
+                      <p class="splash__method">touch</p>
+                      <p class="splash__info">
+                        Move the paddle left or right by clicking on the
+                        left/right half of the screen
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="game__info">
+          <div class="game__buttons">
+            <button class="game__modal">?</button>
+            <button class="game__auto">auto</button>
+          </div>
+          <div class="quant">
+            <h5>Ball Quantity</h5>
+            <select class="quant__input" style="width: 80%; height: 3em;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="game__body">
+            <div class="game__score">
+              <h5 class="game__score--title">SCORE</h5>
+              <h1 class="game__score--track">0</h1>
+            </div>
+            <div class="game__loc">
+              <h3>Last Ball Hit</h3>
+              <div class="game__coord">
+                <p class="game__x">none</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game__canvas">
+          <canvas id="myCanvas" width="300" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="history">
+      <h2 class="history__title">Session History</h2>
+      <div class="history__each"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
